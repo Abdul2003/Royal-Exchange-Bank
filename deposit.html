@@ -1,0 +1,273 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Royal Exchange Global</title>
+	<link href="css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+
+<link rel="stylesheet" href="css/deposit.css">
+<link rel="stylesheet" href="css/bitcoin.css">
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/deposit.js"></script>
+
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+		<a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+			<h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+		</a>
+		<a href="index.html" class="sidebar-toggler flex-shrink-0">
+			<h3 class="text-primary">Royal Exchange Global</h3>
+		</a>
+		
+		<div class="navbar-nav align-items-center ms-auto">
+		
+			<div class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+					<img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+					<span id="userName" class="d-none d-lg-inline-flex">Settings</span>
+				</a>
+				<div class="dropdown-menu dropdown-menu-end bg-white border-0 rounded-0 rounded-bottom m-0">
+					<a href="dashboard.html" class="dropdown-item">Dashboard</a>
+					<a href="index.html" class="dropdown-item">Log Out</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="parent">
+
+<br>
+<br>
+<br>
+<div class="row  w-100 gx-4 gx-lg-5 justify-content-center">
+
+	<div class="col-lg-8 col-xl-6 text-center">
+		<h2 class="text-white mt-0">Pay through Crypto-Currency!</h2>
+		<hr class="divider divider-light" />
+		<h4 class="text-white mt-0">We offering payments through a range of Crypto-Currencies and other methods.<p> Make your first deposit through any of the available Payment Methods.</h4>
+	</div>
+
+</div>
+<br>
+<br>
+<br>
+<div class="box-container">
+	<div class="border-box" >
+		<div class="border-box-content">
+		<img class="cryp-logo" src="workimg\img\portfolio\bitcoin/BTC.png">
+		<br>
+		<br>
+		<br>
+		<button id="cryp-button" >Bitcoin</button>
+	</div>
+</div>
+
+	<br>
+	<br>
+	
+	<div class="border-box" >
+		<div class="border-box-content">
+		<img class="cryp-logo" src="workimg\img\portfolio\bitcoin/ETH.png">
+		<br>
+		<br>
+		<br>
+		<button id="cryp-eth">Etherium</button>
+	</div>
+	</div>
+
+	<br>
+	<br>
+	
+	<div class="border-box" >
+		<div class="border-box-content">
+
+		<img class="cryp-logo" src="workimg\img\portfolio\bitcoin/LTE.png">
+		<br>
+		<br>
+		<br>
+		<button id="cryp-lte">Litecoin</button>
+	</div>
+	</div>
+	<br>
+	<br>
+	
+	<!-- <div class="border-box" >
+		<img class="cryp-logo" src="workimg\img\portfolio\bitcoin/DGC.png">
+		<br>
+		<br>
+		<br>
+		<button id="cryp-dgc">Dogecoin</button>
+	</div>
+	<br>
+	<br> -->
+	
+	<div class="border-box" >
+		<div class="border-box-content">
+
+		<img class="cryp-logo" src="workimg\img\portfolio\bitcoin/USDT.png">
+		<br>
+		<br>
+		<br>
+		<button id="cryp-usdt">USDT</button>
+		</div>
+	</div>
+	<br>
+	<br>
+	
+	<!-- <div class="border-box" >
+		<img class="cryp-logo" src="workimg\img\portfolio\bitcoin/WU.png">
+		<br>
+		<br>
+		<br>
+		<button id="cryp-wu">Western Union</button>
+	</div>
+	<br>
+	<br> -->
+</div>
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Funding of accounts by this means should be carried out by sending your investment capital to the wallet address below </p>
+	<div id="wallet">
+	<h4 class="text-dark" id="address"></h4>
+	
+	</div>
+	<br>
+	<p>Copy the wallet address above</p>
+	<h4 class="text-dark">Your trade starts in a short moment after confirmation.</h4>
+	<h4 class="text-dark">Thank You.</h4>
+	
+	<div class="btn-container"><button onclick="alertFire()" class="confirm">Confirm Transaction</button></div>
+  </div>
+ 
+</div>
+</div>
+</body>
+
+        </div>
+   
+<br>
+<br>
+
+<script>
+// Get the modal
+function alertFire() {
+  Swal.fire({
+    position: "top",
+    icon: "success",
+    title: "Deposit Successful",
+    showConfirmButton: false,
+    timer: 1500,
+  });
+}
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("cryp-button");
+var btn1 = document.getElementById("cryp-eth");
+var btn2 = document.getElementById("cryp-lte");
+var btn3 = document.getElementById("cryp-dgc");
+var btn4 = document.getElementById("cryp-usdt");
+var btn5 = document.getElementById("cryp-wu");
+var address = document.getElementById("address")
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+  address.innerHTML = "bc1qvq62uvxc4md8g26f6asuhnlwuadjp6gr36rkv7"
+}
+
+btn1.onclick = function() {
+  modal.style.display = "block";
+  address.innerHTML = "0x7753F9e3e759e76bdd5Fa8689692d1bf68631e4f"
+}
+
+btn2.onclick = function() {
+  modal.style.display = "block";
+  address.innerHTML = "ltc1qx7fjx9xdf6cqrdl2rcxx6w435nmndp2j68e6s6"
+}
+
+// btn3.onclick = function() {
+//   modal.style.display = "block";
+//   address.innerHTML = "TJ8a4NU7wpMaJMm8oyxUf13CvDNSdaVN8j"
+// }
+
+btn4.onclick = function() {
+  modal.style.display = "block";
+  address.innerHTML = "TJ8a4NU7wpMaJMm8oyxUf13CvDNSdaVN8j"
+}
+
+// btn5.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<div id="layoutAuthentication_footer">
+	<footer class="py-4 bg-secondary mt-auto ">
+		<div class="container-fluid px-4">
+			<div class="d-flex align-items-center justify-content-between small">
+				<div class="text-white">Copyright &copy; Royal Exchange Global 2024</div>
+				<div>
+					<a class="text-white" href="#">Privacy Policy</a>
+					&middot;
+					<a class="text-white" href="#">Terms &amp; Conditions</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+<!-- Template Javascript -->
+
+</body>
+
+
+</html>
