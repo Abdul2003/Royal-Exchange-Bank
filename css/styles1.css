@@ -117,9 +117,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.tradingview-widget-container {
-  width: 100% !important;
-}
+
 hr {
   margin: 1rem 0;
   color: inherit;
